@@ -12,3 +12,8 @@
 */
 
 Route::get('/', 'welcomeController@index');
+Route::post('/create', 'welcomeController@create');
+Route::delete('/{id}', 'welcomeController@delete');
+Route::get('/datalist', 'welcomeController@studentlist');
+Route::post('/{id}', 'welcomeController@updateID');
+Route::put('/update/{id}', 'welcomeController@update');
